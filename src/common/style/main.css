@@ -1,0 +1,70 @@
+/*.welcome {
+	background:red;
+}*/
+
+ul {
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+
+h2, h3, h4, p {
+	margin:0;
+	padding:0;
+}
+
+
+#root {
+	width:500px;
+}
+
+h2 {
+	border-bottom:1px solid #ccc;
+}
+
+.lists {
+	display:flex;
+	padding:10px 0;
+}
+
+img {
+	width:40px;
+	height:40px;
+	border:none;
+}
+
+ul ul{
+	padding-left:40px;
+}
+
+.content {
+	padding-left:10px;
+	font-size:14px;
+}
+
+span {
+	color:#ccc;
+	font-size:12px;
+}
+
+
+textarea {
+	width:500px;
+	height:150px;
+}
+
+button {
+	border:none;
+	background:#78bbcc;
+	color:#fff;
+	width:60px;
+	height:30px;
+}
+
+
+em {
+	font-style:normal;
+	color:#ccc;
+	font-weight:normal;
+	font-size:12px;
+}
