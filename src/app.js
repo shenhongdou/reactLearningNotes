@@ -187,18 +187,7 @@ class CommentUl extends React.Component{
 		
 		let commentlist = data.map((item,index)=>{
 			
-			if(item.reply.length>0){
-
-				let replies = item.reply.map((reply,replyIndex)=>{
-					
-					return (<li key = {replyIndex} ><Comment {...reply} /></li>)
-				})
-
-				return <li key = {index} ><Comment {...item} /><ul>{replies}</ul></li>
-
-			}else{
-				return <li key = {index} ><Comment {...item} /></li>
-			}
+			return item.reply.length>0 ? <li key = {index} ><Comment {...item} /><CommentUl data = {item.reply} /></li> : <li key = {index} ><Comment {...item} /></li>
 			
 		})
 
